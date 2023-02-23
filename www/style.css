@@ -1,0 +1,93 @@
+/* basic css style without custom fonts */
+
+body {
+  /* natural contrast background */
+  background-color: #fff;
+  color: #000;
+  font-family: "Helvetica", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin: 0 0 1em 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.8em;
+}
+
+h6 {
+  font-size: 0.6em;
+}
+
+p {
+  margin: 0 0 1.5em 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Path: layout.css */
+/* layout css style */
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.row {
+  margin: 0 -1em;
+  width: calc(100% + 2em);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row .column {
+  padding: 0 1em;
+  float: left;
+  width: 100%;
+}

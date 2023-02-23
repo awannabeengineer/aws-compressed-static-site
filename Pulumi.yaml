@@ -1,0 +1,3 @@
+name: aws-stat-site-debug
+runtime: go
+description: A minimal AWS Go Pulumi program

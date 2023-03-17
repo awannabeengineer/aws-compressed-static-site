@@ -1,0 +1,23 @@
+<svg fill="none" viewBox="0 0 40 20" width="40" height="20" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes rotate {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        .emoji-rotate {
+          display: inline-block; /* Allow for CSS transforms */
+          animation: rotate 2s linear infinite; /* Apply the rotate animation, with a 2 second duration, linear timing, and infinite loop */
+        }
+      </style>
+
+        <span class="emoji-rotate">🤑</span>
+    </div>
+  </foreignObject>
+</svg>

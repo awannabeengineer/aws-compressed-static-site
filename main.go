@@ -103,7 +103,7 @@ func main() {
 		}
 
 		// create and associate cloudfront function with endpoint
-		cFunction, err := cloudfront.NewFunction(ctx, "redirect_and_cache", &cloudfront.FunctionArgs{
+		cFunction, err := cloudfront.NewFunction(ctx, "redirect_compressed_and_cache", &cloudfront.FunctionArgs{
 			Runtime: pulumi.String("cloudfront-js-1.0"),
 			Comment: pulumi.String("find cause of problem with precompressed selector logic"),
 			Publish: pulumi.Bool(true),
@@ -116,7 +116,7 @@ func main() {
 		// create a cache policy for cloudfront distribution
     cPolicy, err := cloudfront.NewCachePolicy(ctx, "cachePolicy", &cloudfront.CachePolicyArgs{
 			Comment:    pulumi.String("Cache policy for static site"),
-			Name:       pulumi.String("static-site-cache-policy"),
+			Name:       pulumi.String("precompressed_static_site_cache_policy"),
 			DefaultTtl: pulumi.Int(3600),
 			MaxTtl:     pulumi.Int(86400),
 			MinTtl:     pulumi.Int(0),
